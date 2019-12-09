@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+
+	<bean id="sports" class="com.capgemini.springcore.beans.Sports">
+		<property name="name" value="Cricket" />
+		<property name="totalPlayers" value="11" />
+		<property name="teamInfo">
+		<map>
+			<entry key="India" value="Virat Kohli" />
+			<entry key="New Zealand" value="Kane Williamson" />
+			<entry key="Australia" value="Tim Paine" />
+		</map>
+		</property>
+	</bean>
+</beans>

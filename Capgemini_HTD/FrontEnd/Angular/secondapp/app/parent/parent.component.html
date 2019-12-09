@@ -1,0 +1,6 @@
+<p>parent works!</p>
+<h1>{{dataFromChild}}</h1>
+
+<app-child [dataFromParent]='data'
+    (childEvent)='dataFromChild=$event'>
+</app-child>

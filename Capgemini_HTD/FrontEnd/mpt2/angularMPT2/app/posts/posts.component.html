@@ -1,0 +1,31 @@
+<div>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Index</th>
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>BODY</th>
+                <th>DELETE</th>
+                <th>UPDATE</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let user of gitUsers;index as i'>
+                <td>{{i+1}}</td>
+                <td>{{user.id}}</td>
+                <td>{{user.title}}</td>
+                <td>{{user.body}}</td>
+                <td>
+                    <button class="btn btn-outline-danger">Delete</button>
+                </td>
+                <td>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Update </button>
+                        </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

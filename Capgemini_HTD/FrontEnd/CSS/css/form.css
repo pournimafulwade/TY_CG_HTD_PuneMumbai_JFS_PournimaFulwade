@@ -1,0 +1,46 @@
+form{
+    border : 1px solid black;
+    border-radius : 25px;
+    width :300px;
+    height:200px;
+    margin-left :480px;
+    margin-top :200px;
+    text-align:center;
+    background-image :url("/images/apple-4539873__340.jpg");
+    font-size: 25px;   
+    color: rgb(107, 46, 219);
+    box-shadow: 10px 10px 20px rgb(23, 41, 209);
+    font-family:cursive;
+}
+input[type="text"]{
+    width: 200px;
+    height:20px;
+    border:1px solid rgb(233, 20, 204);
+    border-radius: 50px;
+    margin:10px;
+    outline :none;
+    text-align: center;
+}
+input[type="password"]{
+    width: 200px;
+    height:20px;
+    border:1px solid navy;
+    border-radius: 50px;
+    margin:10px;
+    outline :none;
+    text-align: center;
+}
+input[type="submit"]{
+border: 2px solid purple;
+padding: 5px 20px;
+border-radius: 25px;
+outline:none;
+}
+input[type="submit"]:hover{
+    background-color: rebeccapurple;
+    cursor:pointer;
+}
+body{
+    background-image: url("/images/lake-4519623__340.jpg");
+    background-size: cover ;
+}

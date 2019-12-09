@@ -1,0 +1,26 @@
+<div class="col-md-4 m-auto mt-4">
+    <form #addPost="ngForm" (ngSubmit)="submitForm(addPost)">
+        <div class="form-group">
+            <label for="userid">User Id:</label>
+            <input type="number" name="userid" class="form-control" #userid="ngModel" ngModel required>
+        </div>
+        <div class="form-group">
+            <label for="id">Id:</label>
+            <input type="number" name="id" class="form-control" #id="ngModel" ngModel required>
+        </div>
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" name="title" class="form-control" #title="ngModel" ngModel required>
+        </div>
+        <div class="form-group">
+            <label for="body">Body:</label>
+            <input type="text" name="body" class="form-control" #body="ngModel" ngModel required>
+        </div>
+       
+        
+        <div class="btn-group float-right">
+            <button type="reset" class="btn btn-outline-dark">Reset</button>
+            <button type="submit" class="btn btn-outline-primary" [disabled]='addEmployee.invalid'>Submit</button>
+        </div>
+    </form>
+</div>
